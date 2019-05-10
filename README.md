@@ -22,14 +22,14 @@ api project(':lotus')
 annotationProcessor project(':compiler')  
 配置：  
 android {  
-  defaultConfig {  
-      javaCompileOptions {  
-          annotationProcessorOptions {  
-              arguments = [moduleName: project.getName()]  
-          }  
-      }  
-  }  
-}  
+  &#8195;defaultConfig {  
+      &#8195;&#8195;javaCompileOptions {  
+          &#8195;&#8195;&#8195;annotationProcessorOptions {  
+              &#8195;&#8195;&#8195;&#8195;arguments = [moduleName: project.getName()]  
+          &#8195;&#8195;&#8195;}    
+     &#8195;&#8195; }    
+ &#8195; }    
+}    
   
   
 例子：模块1调用模块2的代码  
@@ -39,9 +39,9 @@ android {
 @LotusImpl("路由路径")  
 XXXImpl{  
     
-  void method1(参数1,参数2)  
+  &#8195;&#8195;void method1(参数1,参数2)  
     
-  返回值 method2()  
+ &#8195;&#8195; 返回值 method2()  
 }    
     
 模块2：    
@@ -49,15 +49,15 @@ XXXImpl{
 @LotusProxy("路由路径")  //路由路径必须与模块1的路由路径一致  
 XXXProxy{  
   
-  //方法名与参数必须与模块1的方法名与参数一致  
-  public void method1(参数1,参数2){  
-      // do something  
-  }  
+ &#8195;&#8195; //方法名与参数必须与模块1的方法名与参数一致  
+  &#8195;&#8195;public void method1(参数1,参数2){  
+     &#8195;&#8195; // do something  
+  &#8195;&#8195;}  
     
-  public 返回值 method2(){  
-     //do something  
-     return 返回值  
-  }  
+  &#8195;&#8195;public 返回值 method2(){  
+   &#8195;&#8195;  //do something  
+   &#8195;&#8195;  return 返回值  
+  &#8195;&#8195;}  
 }  
     
   
