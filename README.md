@@ -1,6 +1,7 @@
 # Lotus
 模块化路由Lotus
   
+  
 原理：  
 1、通过注解+APT将接口类与代理类生成映射表  
 2、通过groovy+asm将映射表注入lotus  
