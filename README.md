@@ -68,7 +68,7 @@ Lotus.getInstance().invoke(XXXInterface.class).method1(参数1,参数2)
 
 
 混淆配置:
-# lotus生成中间代码
+lotus生成中间代码
 -keep class com.lotus.** { *; }
 Lotus注解的类需要过滤混淆
 
