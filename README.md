@@ -1,18 +1,18 @@
 # Lotus
 模块化路由Lotus
 
-原理：
+#原理：
 1、通过注解+APT将接口类与代理类生成映射表
 2、通过groovy+asm将映射表注入lotus
 3、动态代理+反射调用
 
-lotus -- lotus入口
+#lotus -- lotus入口
 
-annotation -- 注解+接口module
+#annotation -- 注解+接口module
 
-compiler -- apt：生成注解类的映射表
+#compiler -- apt：生成注解类的映射表
 
-buildSrc -- plugin，将映射表注入lotus
+#buildSrc -- plugin，将映射表注入lotus
 
 使用姿势：
 公用mudule依赖：
