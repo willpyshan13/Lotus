@@ -30,9 +30,7 @@ android {
           &#8195;&#8195;&#8195;}    
      &#8195;&#8195; }    
  &#8195; }    
-}    
-
-Lotus注解的类需要过滤混淆
+}
 
   
 例子：模块1调用模块2的代码  
@@ -67,5 +65,10 @@ XXXProxy{
 模块1调用模块2  
 Lotus.getInstance().invoke(XXXInterface.class).method1(参数1,参数2)  
 返回值 = Lotus.getInstance().invoke(XXXInterface.class).method2()  
-  
-  
+
+
+混淆配置:
+# lotus生成中间代码
+-keep class com.lotus.** { *; }
+Lotus注解的类需要过滤混淆
+
